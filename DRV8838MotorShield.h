@@ -23,8 +23,8 @@ class DRV8838MotorShield
     void setSpeeds(int iSpeed);
     void sleep() {digitalWrite(mcSleep1Pin, 0); digitalWrite(mcSleep2Pin, 0);}
     void wake()  {digitalWrite(mcSleep1Pin, 1); digitalWrite(mcSleep2Pin, 1);}
-    void flipM1();
-    void flipM2();
+    void flipM1() {mbFlipM1 = true;}
+    void flipM2() {mbFlipM2 = true;}
   private:
     unsigned char mcDir1Pin;
     unsigned char mcSpeed1Pin;

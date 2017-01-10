@@ -3,11 +3,11 @@
 // Constructors ////////////////////////////////////////////////////////////////
 DRV8838MotorShield::DRV8838MotorShield()
 {
-  mcDir1Pin = 7;
-  mcSpeed1Pin = 8;
+  mcSpeed1Pin = 7;
+  mcDir1Pin = 8;
   mcSleep1Pin = 9;
-  mcDir2Pin = 10;
-  mcSpeed2Pin = 11;
+  mcSpeed2Pin = 10;
+  mcDir2Pin = 11;
   mcSleep2Pin = 12;
   mbDir1PinState = true;  //Set the directions to true. If your motor spins
   mbDir2PinState = true;  //opposite your intent, use the FLIP settings. 
@@ -16,8 +16,8 @@ DRV8838MotorShield::DRV8838MotorShield()
 }
 
 //user defined pins with a typical constructor. 
-DRV8838MotorShield::DRV8838MotorShield(unsigned char DIR1, unsigned char SPEED1, unsigned char SLEEP1, unsigned char DIR2, 
-                           unsigned char SPEED2, unsigned char SLEEP2)
+DRV8838MotorShield::DRV8838MotorShield(unsigned char SPEED1, unsigned char DIR1, unsigned char SLEEP1, unsigned char SPEED2, 
+                           unsigned char DIR2, unsigned char SLEEP2)
 {
   mcDir1Pin = DIR1;
   mcSpeed1Pin = SPEED1;

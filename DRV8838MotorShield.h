@@ -11,8 +11,8 @@ class DRV8838MotorShield
     // default constructor. See cpp for pin definitions. 
     DRV8838MotorShield(); 
 	// User-defined pin selection. 
-    DRV8838MotorShield(unsigned char DIR1, unsigned char SPEED1, unsigned char SLEEP1, unsigned char DIR2, 
-                           unsigned char SPEED2, unsigned char SLEEP2);
+    DRV8838MotorShield(unsigned char SPEED1, unsigned char DIR1, unsigned char SLEEP1, unsigned char SPEED2, 
+                           unsigned char DIR2, unsigned char SLEEP2);
 	
    
     // PUBLIC METHODS
